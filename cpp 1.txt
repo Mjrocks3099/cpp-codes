@@ -26,6 +26,7 @@ count = 0;
 
 if(count > max){
 max = count;
+
 }
 }
 
@@ -35,3 +36,12 @@ max = count;
 
 cout << max;
 }
+
+for(int i = 0; i < n; i++){
+count = (arr[i] == 1) ? count + 1 : 0;
+max_c = max(max_c, count);
+}
+
+max_c = max(max_c, count);
+
+cout << max_c;
